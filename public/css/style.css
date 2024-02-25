@@ -14,11 +14,8 @@ a {
     background-color: transparent; /* Прозрачный фон */
     outline: none; /* Убрать контур */
 }
-
 .contact {
     height: 20%;
-
-    background-color: #dca227;
     border: 0.25rem solid black;
     margin-bottom: 1rem;
 

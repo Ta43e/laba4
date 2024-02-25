@@ -9,8 +9,8 @@ async function getAllContacts ( req, res) {
     try {
         const contacts = await getContacts();
         res.render('contacts.hbs', {
-            title: 'ddd',
-            message: 'f2q',
+            title: 'Контакты',
+            message: 'Контакты',
             buttonsEnabled: true,
             producs: contacts,
         })
@@ -25,8 +25,8 @@ async function getAllContactsAdd ( req, res) {
         const contacts = await getContacts();
         res.render('addContacs.hbs', {
             buttonsEnabled: false,
-            title: 'ddd',
-            message: 'f2q',
+            title: 'Добавить контакт',
+            message: 'Добавить контакт',
             producs: contacts,
         })
     } catch (error) {
@@ -76,6 +76,8 @@ async function updateContactView(req, res) {
         let contact = await getContact(req.query.id);
         console.log(req.query.id);
         res.render('updateContacs.hbs', {
+            title: 'Изменить контакт',
+            message: 'Изменить контакт',
             buttonsEnabled: false,
             producs: contacts,
             currentContact: contact
