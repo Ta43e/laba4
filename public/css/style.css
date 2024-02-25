@@ -1,0 +1,33 @@
+#scrollableContainer {
+    width: 500px; /* Ширина контейнера */
+    height: 200px; /* Высота контейнера */
+    overflow: auto; /* Задаем прокрутку */
+    border: 1px solid #ccc; /* Добавляем рамку для наглядности */
+    padding: 10px; /* Добавляем отступы внутри контейнера */
+}
+ul, ol {
+    list-style-type: none;
+}
+a {
+    color: inherit; /* Наследовать цвет текста */
+    text-decoration: none; /* Убрать подчеркивание */
+    background-color: transparent; /* Прозрачный фон */
+    outline: none; /* Убрать контур */
+}
+
+.contact {
+    height: 20%;
+
+    background-color: #dca227;
+    border: 0.25rem solid black;
+    margin-bottom: 1rem;
+
+    display: flex;
+    justify-content:space-around;
+    gap: 10rem;
+    align-items: center;
+
+
+    font-size: 2rem;
+    font-weight: bold;
+}

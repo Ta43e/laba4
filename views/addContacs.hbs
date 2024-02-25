@@ -1,0 +1,29 @@
+<h1>
+    {{message}}
+</h1>
+    <div id="scrollableContainer">
+    <ul>
+        {{#each producs}}
+        <li>
+                    {{>contact}}
+        </li>
+        {{/each}}
+    </ul>
+</div>
+<form class="form">
+
+    <input class="input" type="text" required name="name" placeholder="Name">
+
+    <input class="input" type="tel" required name="phone" placeholder="Phone">
+
+</form>
+<div>
+    <button onclick="addContact()"> 
+        OK.
+    </button>
+</div>
+<div>
+    <button> 
+        <button onclick="{{goBack}}">Cancel</button>
+    </button>
+</div>
